@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CadastroPessoaComponent } from './cadastro-pessoa.component';
-import { ComponentsModule } from 'src/app/components/components.module';
+import { ComponentsModule } from '../../components/components.module';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 

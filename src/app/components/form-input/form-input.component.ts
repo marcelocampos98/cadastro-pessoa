@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { TipoInput } from 'src/app/enum/tipo-input.enum';
+import { TipoInput } from '../../enum/tipo-input.enum';
 
 @Component({
   selector: 'app-form-input',

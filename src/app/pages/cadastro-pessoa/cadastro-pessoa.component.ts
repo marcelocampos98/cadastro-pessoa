@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-import { TipoInput } from 'src/app/enum/tipo-input.enum';
-import { CadastroPessoaForm } from 'src/app/forms/cadastro-pessoa-form';
+import { TipoInput } from '../../enum/tipo-input.enum';
+import { CadastroPessoaForm } from '../../forms/cadastro-pessoa-form';
 
 @Component({
   selector: 'app-cadastro-pessoa',
