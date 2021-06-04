@@ -1,0 +1,29 @@
+<div class="content">
+    <div class="container">
+        <div class="card shadow-sm">
+            <h4 class="card-header">
+                Cadastro de Pessoa
+            </h4>
+            <div class="card-body">
+                <div class="row">
+                    <app-form-input class="col-md-4" [label]="'Nome:'" [tipo]="tipoInput.PADRAO"
+                        [control]="pessoa.form.controls.nome" [maxLength]="50"></app-form-input>
+                    <app-form-input class="col-md-4" [label]="'Sobrenome:'" [tipo]="tipoInput.PADRAO"
+                        [control]="pessoa.form.controls.sobrenome" [maxLength]="50"></app-form-input>
+                    <app-form-input class="col-md-4" [label]="'Data de nascimento:'" [tipo]="tipoInput.DATA"
+                        [control]="pessoa.form.controls.dataNascimento"></app-form-input>
+                    <app-form-input class="col-md-4" [label]="'Celular:'" [tipo]="tipoInput.TELEFONE"
+                        [control]="pessoa.form.controls.celular"></app-form-input>
+                    <app-form-input class="col-md-8" [label]="'E-mail:'" [tipo]="tipoInput.PADRAO"
+                        [control]="pessoa.form.controls.email"></app-form-input>
+                    <app-form-input class="col-md-12" [label]="'Currículo:'" [tipo]="tipoInput.PDF"
+                        [control]="pessoa.form.controls.curriculo"></app-form-input>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success btn-sm fa-pull-right" [disabled]="pessoa.form.invalid || isEnviado"
+                    (click)="salvar()">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
